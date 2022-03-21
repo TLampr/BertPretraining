@@ -1,0 +1,31 @@
+{
+  "data_path": "/home/anastasios/Desktop/SU/NLP/Pre_training/English/",
+  "model_directory": "/home/anastasios/Desktop/SU/NLP/Pre_training/Models/bert_base_cased_sv/",
+  "new_model_params": {
+    "attention_heads": 12,
+    "hidden_layers": 12,
+    "representation_size": 768,
+    "dropout": 0.1,
+    "attention_dropout": 0.1
+  },
+  "tokenizer_directory": "/home/anastasios/Desktop/SU/NLP/Pre_training/Models/bert_base_cased_sv/",
+  "parameters": {
+    "epochs": 40,
+    "learning_rate": 0.0001,
+    "batch": {
+      "size": 16,
+      "accumulation": 16
+    },
+    "warmup_steps": 10000,
+    "grad_norm": 0,
+    "weight_decay": 0.01,
+    "adam_epsilon": 0.000001,
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "mlm_probability": 0.15
+  },
+  "output_dir": "/home/anastasios/Desktop/SU/NLP/Pre_training/Models/test/",
+  "final_model_dir": "/home/anastasios/Desktop/SU/NLP/Pre_training/Models/test/final",
+  "save_number": 20,
+  "save_steps": 1000
+}

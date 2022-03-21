@@ -1,0 +1,7 @@
+{
+  "data_path": "/media/veracrypt1/",
+  "tokenizer_path": "./",
+  "sequence_length": 512,
+  "part_number": 10,
+  "save_folder": "./"
+}
