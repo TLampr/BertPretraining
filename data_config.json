@@ -1,7 +1,7 @@
 {
-  "data_path": "/media/veracrypt1/",
-  "tokenizer_path": "./",
+  "data_path": "/path/to/text/",
+  "tokenizer_path": "/path/to/tokenizer/",
   "sequence_length": 512,
   "part_number": 10,
-  "save_folder": "./"
+  "save_folder": "/path/to/save/processed/text/"
 }

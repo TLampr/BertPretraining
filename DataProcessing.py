@@ -52,15 +52,8 @@ if __name__ == "__main__":
             return_special_tokens_mask=True
         )
 
-    try:
-        # If you provide the config of the model in the same folder it will load the proper tokenizer
-        tokenizer = AutoTokenizer.from_pretrained(config["tokenizer_path"])
-    except:
-        # If you don't you need to specify it
-        try:
-            tokenizer = RobertaTokenizerFast.from_pretrained(config["tokenizer_path"])
-        except:
-            tokenizer = BertTokenizerFast.from_pretrained(config["tokenizer_path"])
+    # If you provide the config of the model in the same folder it will load the proper tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(config["tokenizer_path"])
 
     training_paths = [str(x) for x in Path(config["data_path"]).glob("*.txt")]
     datasets = load_dataset(

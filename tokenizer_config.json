@@ -1,6 +1,6 @@
 {
-  "data_path": "/media/veracrypt1/",
+  "data_path": "/path/to/text/",
   "vocabulary_size": 50350,
   "tokenizer_type": "wordPiece",
-  "save_dir": "./"
+  "save_dir": "/path/to/save/tokenizer/"
 }
