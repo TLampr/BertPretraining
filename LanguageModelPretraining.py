@@ -94,8 +94,8 @@ if __name__ == '__main__':
 
     # if you want to start from a checkpoint add the "checkpoint_dir" entry and path in the json file
     if "checkpoint_dir" in config:
-        trainer.train()
-    elif isinstance(config["checkpoint_dir"], str):
         trainer.train(resume_from_checkpoint=config["checkpoint_dir"])
+    else:
+        trainer.train()
     os.makedirs(os.path.dirname(config["final_model_dir"]), exist_ok=True)
     trainer.save_model(config["final_model_dir"])
